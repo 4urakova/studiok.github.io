@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Онлайн-калькулятор</title>
+    <meta name="verify-v1" content="om6UcRKpCTaalsULLaQMxRpn6sp+PIPrB7g6CD67MK4=">
+    <meta name='yandex-verification' content='5a610705dddbf740'/>
+    <!-- Bootstrap -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- FONT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic' rel='stylesheet'
+          type='text/css'>
+    <link rel="icon" type="image/x-icon" href="/bitrix/images/favicon.ico">
+    <!-- Bitrix -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="keywords" content="полиграфия, печать, качественная, спб"/>
+    <meta name="description"
+          content="Качественная полиграфия в СПБ - &quot;Келла-Студио&quot;. Печать полиграфи в Санкт-Петербурге - календари, pos-материалы, листовая продукция и многое другое. Разработка дизайна полиграфии"/>
+    <link href="bitrix/js/main/core/css/core_14486300635336.css" type="text/css" rel="stylesheet"/>
+    <link href="bitrix/templates/kella_fixed/components/bitrix/photo/polygraphy/bitrix/photo.sections.top/default/style_1513860400178.css"
+          type="text/css" rel="stylesheet"/>
+    <link href="bitrix/templates/kella_fixed/css/bootstrap.min_144863006497339.css" type="text/css"
+          data-template-style="true" rel="stylesheet"/>
+    <link href="bitrix/templates/kella_fixed/css/colors_1448630064759.css" type="text/css" data-template-style="true"
+          rel="stylesheet"/>
+    <link href="bitrix/templates/kella_fixed/css/navbar_1448630064509.css" type="text/css" data-template-style="true"
+          rel="stylesheet"/>
+    <link href="bitrix/templates/kella_fixed/css/tabmenu_14486300641109.css" type="text/css" data-template-style="true"
+          rel="stylesheet"/>
+    <link href="bitrix/templates/kella_fixed/css/slider_14486300642304.css" type="text/css" data-template-style="true"
+          rel="stylesheet"/>
+    <link href="bitrix/templates/kella_fixed/css/top_portfolio_1448630064781.css" type="text/css"
+          data-template-style="true" rel="stylesheet"/>
+    <link href="bitrix/templates/kella_fixed/css/news-line_1448630064136.css" type="text/css" data-template-style="true"
+          rel="stylesheet"/>
+    <link href="bitrix/templates/kella_fixed/css/main-page-article_144863006437.css" type="text/css"
+          data-template-style="true" rel="stylesheet"/>
+    <link href="bitrix/templates/kella_fixed/css/main-clients_1448630064372.css" type="text/css"
+          data-template-style="true" rel="stylesheet"/>
+    <link href="bitrix/templates/kella_fixed/css/breadcrumbs_1448630064157.css" type="text/css"
+          data-template-style="true" rel="stylesheet"/>
+    <link href="bitrix/templates/kella_fixed/components/bitrix/menu/navbar-menu-footer/style_1448630064626.css"
+          type="text/css" data-template-style="true" rel="stylesheet"/>
+    <link href="bitrix/templates/kella_fixed/styles_1546003071989.css" type="text/css" data-template-style="true"
+          rel="stylesheet"/>
+    <link href="bitrix/templates/kella_fixed/template_styles_15460030714022.css" type="text/css"
+          data-template-style="true" rel="stylesheet"/>
+    <!-- добавлен отдельный стилевой файл для слайдера -->
+    <link href="bitrix/templates/kella_fixed/css/slick.css" type="text/css"
+          data-template-style="true" rel="stylesheet"/>
+    <!-- добавлен отдельный стилевой файл для калькулятора -->
+    <link href="bitrix/templates/kella_fixed/css/calc.css" type="text/css"
+          data-template-style="true" rel="stylesheet"/>
+
+    <script type="text/javascript">if (!window.BX)window.BX = {
+        message: function (mess) {
+            if (typeof mess == 'object') for (var i in mess) BX.message[i] = mess[i];
+            return true;
+        }
+    };</script>
+    <script type="text/javascript">(window.BX || top.BX).message({
+        'JS_CORE_LOADING': 'Загрузка...',
+        'JS_CORE_NO_DATA': '- Нет данных -',
+        'JS_CORE_WINDOW_CLOSE': 'Закрыть',
+        'JS_CORE_WINDOW_EXPAND': 'Развернуть',
+        'JS_CORE_WINDOW_NARROW': 'Свернуть в окно',
+        'JS_CORE_WINDOW_SAVE': 'Сохранить',
+        'JS_CORE_WINDOW_CANCEL': 'Отменить',
+        'JS_CORE_H': 'ч',
+        'JS_CORE_M': 'м',
+        'JS_CORE_S': 'с',
+        'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние',
+        'JSADM_AI_ALL_NOTIF': 'Показать все',
+        'JSADM_AUTH_REQ': 'Требуется авторизация!',
+        'JS_CORE_WINDOW_AUTH': 'Войти',
+        'JS_CORE_IMAGE_FULL': 'Полный размер'
+    });</script>
+    <script type="text/javascript">(window.BX || top.BX).message({
+        'LANGUAGE_ID': 'ru',
+        'FORMAT_DATE': 'DD.MM.YYYY',
+        'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS',
+        'COOKIE_PREFIX': 'BITRIX_SM',
+        'SERVER_TZ_OFFSET': '10800',
+        'SITE_ID': 's1',
+        'USER_ID': '',
+        'SERVER_TIME': '1556576811',
+        'USER_TZ_OFFSET': '0',
+        'USER_TZ_AUTO': 'Y',
+        'bitrix_sessid': '12735dede7a6cb9acaee38193d885ba7'
+    });</script>
+
+
+    <script type="text/javascript"
+            src="bitrix/cache/js/s1/kella_fixed/kernel_main/kernel_main_1513861803278019.js"></script>
+    <script type="text/javascript">BX.setJSList(['bitrix/js/main/core/core_144863006397612.js', 'bitrix/js/main/core/core_ajax_144863006335278.js', 'bitrix/js/main/json/json2.min_14486300633467.js', 'bitrix/js/main/core/core_ls_144863006310330.js', 'bitrix/js/main/session_14486300633170.js', 'bitrix/js/main/core/core_window_144863006396525.js', 'bitrix/js/main/utils_144863006330972.js']); </script>
+
+
+    <script type="text/javascript">
+        bxSession.Expand(1440, '12735dede7a6cb9acaee38193d885ba7', false, 'eba50e1b175669d8471c7dec8967567e');
+    </script>
+    <script type="text/javascript">var _ba = _ba || [];
+    _ba.push(["aid", "15890184892cfda2b67db287397d0bd3"]);
+    _ba.push(["host", "www.studio.kella.ru"]);
+    (function () {
+        var ba = document.createElement("script");
+        ba.type = "text/javascript";
+        ba.async = true;
+        ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ba, s);
+    })();</script>
+
+
+    <!-- components -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://printbroker.com/bitrix/templates/kella/js/jquery.maskedinput.min.js"></script>
+    <script src="bitrix/templates/kella_fixed/js/calc.js?v=35"></script>
+    <script src="bitrix/templates/kella_fixed/js/calc2.js?v=35"></script>
+
+
+</head>
+<body>
+<a class="sr-only" href="#content">Skip to main content</a>
+<div class="rel">
+    <header class="header-wrap">
+        <div id="header">
+            <div class="container">
+                <a id="logo" class="pull-left" href="/">
+                    <img src="images/logo.jpg" title="logo.jpg" border="0"
+                         alt="logo.jpg" width="91" height="80"/>
+                </a>
+
+
+                <div id="mainMenu" class="pull-right font-lite">
+                    <ul id="tabMenu" class="nav nav-tabs nav-justified">
+                        <li><a href="/portfolio/" data-target="#tab-main-menu-0">Наши работы</a></li>
+                        <li><a href="/design/" data-target="#tab-main-menu-1">Дизайн</a></li>
+                        <li><a href="/polygraphy/" data-target="#tab-main-menu-2">Полиграфия</a></li>
+                        <li><a href="#">Калькулятор</a></li>
+                        <li><a href="#">Отрасли</a></li>
+                        <li><a href="http://www.kellagifts.ru/" data-target="#tab-main-menu-3">Сувениры</a></li>
+                    </ul>
+
+                    <div id="tabSubMenu" class="tab-content text-white">
+                        <div class="tab-pane" id="tab-main-menu-0">
+                            <span><a href="/portfolio/korporativnye-kalendari-kella-studio/">Корпоративные календари Kella Studio</a></span>
+                            <span><a href="/portfolio/ezhednevniki/">Ежедневники и блокноты</a></span>
+                            <span><a href="/portfolio/otkrytki/">Открытки</a></span>
+                            <span><a href="/portfolio/buklety-i-katalogi/">Буклеты и каталоги</a></span>
+                            <span><a href="/portfolio/kreativnye-kontseptsii/">Креативные концепции</a></span>
+                            <span><a href="/portfolio/upakovka/">Упаковка</a></span>
+                            <span><a href="/portfolio/plakaty-i-postery/">Печатная реклама</a></span>
+                            <span><a href="/portfolio/kalendari/">Календари</a></span>
+                            <span><a href="/portfolio/logotipy/">Логотипы и Фирменный стиль</a></span>
+                            <span><a href="/portfolio/suveniry-i-podarki/">Сувениры и подарки</a></span>
+                        </div>
+                        <div class="tab-pane" id="tab-main-menu-1">
+                            <span><a href="/design/razrabotka-firmennogo-stilya/">Разработка фирменного стиля</a></span>
+                            <span><a href="/design/elektronnye-prezentatsii-i-animatsiya/">Электронные презентации и анимация</a></span>
+                            <span><a href="/design/buklety/">Буклеты</a></span>
+                            <span><a href="/design/poligraficheskiy-dizayn/">Полиграфический дизайн</a></span>
+                            <span><a href="/design/kalendarnaya-produktsiya/">Календарная продукция</a></span>
+                            <span><a href="/design/reklamnaya-poligrafiya/">Рекламная полиграфия</a></span>
+                        </div>
+                        <div class="tab-pane" id="tab-main-menu-2">
+                            <span><a href="/polygraphy/vidy-pechati/">Виды печати</a></span>
+                            <span><a href="/polygraphy/kalendari/">Цифровая печать</a></span>
+                            <span><a href="/polygraphy/pos-materialy-pos/">Офсетная печать</a></span>
+                            <span><a href="/polygraphy/listovaya-produktsiya/">Широкоформатная</a></span>
+                            <span><a href="/polygraphy/listovaya-produktsiya/">Шелкография</a></span>
+                            <span><a href="/polygraphy/kalendari/">Календари</a></span>
+                            <span><a href="/polygraphy/pos-materialy-pos/">POS материалы (ПОС)</a></span>
+                            <span><a href="/polygraphy/listovaya-produktsiya/">Листовая продукция</a></span>
+                            <span><a href="/polygraphy/bloknoty/">Блокноты</a></span>
+                            <span><a href="/polygraphy/katalogi/">Каталоги</a></span>
+                            <span><a href="/polygraphy/buklety/">Буклеты</a></span>
+                            <span><a href="/polygraphy/konverty/">Конверты</a></span>
+                            <span><a href="/polygraphy/samokopiruyushchiesya-blanki/">Самокопирующиеся бланки</a></span>
+                            <span><a href="/polygraphy/otkrytki/">Открытки</a></span>
+                            <span><a href="/polygraphy/papki/">Папки</a></span>
+                            <span><a href="/polygraphy/prepress/">Предпечатная подготовка</a></span>
+                            <span><a href="/polygraphy/horeca/">Horeca</a></span>
+                            <span><a href="/polygraphy/retail/">Retail</a></span>
+                            <span><a href="/polygraphy/gotovye-makety-dlya-pechati/">Готовые макеты для печати</a></span>
+                            <span><a href="/polygraphy/dopolnitelnye-uslugi-i-vozmozhnosti-poligrafii/">Дополнительные услуги и возможности полиграфии</a></span>
+                            <span><a href="/polygraphy/originalnaya-poligrafi/">Оригинальная полиграфия</a></span>
+                            <span><a href="/polygraphy/uf-pechat-na-plastike/">УФ-печать на пластике</a></span>
+                            <span><a href="/polygraphy/farm/">Фарм</a></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="navbar" class="navbar navbar-inverse">
+            <div class="container">
+
+                <nav role="navigation" class="navbar-left">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="/company/">О компании</a></li>
+
+                        <li><a href="/clients/">Клиенты</a></li>
+
+                        <li><a href="/articles/">Статьи</a></li>
+
+                        <li><a href="/news/">Новости</a></li>
+
+                        <li><a href="/contacts/">Контакты</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="navbar-text navbar-right">
+                    <div class="navbar-text__contacts">Санкт-Петербург, <a href="/contacts/">пер. Дмитровский, д.6</a>
+                    </div>
+                    <div class="navbar-text__contacts  navbar-text__contacts--phones">
+                        <a href="tel:+78126001100" class="navbar-text__phone  navbar-text__phone--main">+7 (812)
+                            600-11-00</a>
+                        <span class="dot">&#9679</span>
+                        <a href="tel:+78005058803" class="navbar-text__phone">8 (800) 505-88-03</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container inner-pages">
+
+        <main id="content" class="content" role="main">
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li><a href="/" class="breadcrumbs__item">Главная</a></li>
+                    <li><span class="breadcrumbs__item">Калькулятор</span></li>
+                </ul>
+            </div>
+
+            <h1>Онлайн калькулятор</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+
+            <div id="rezult_block">
+
+
+                <script>$(document).ready(function () {
+                    $("#order_button_sb").click(function (e) {
+                        yaCounter50680996.reachGoal('order_button');
+                        gtag('event', 'event', {'event_category': 'order'});
+                        submit('/zakaz/', {order_params: $("#form_calc").serialize()});
+                    });
+                    $("#1click_button_sb").click(function (e) {
+                        gtag('event', 'sendform', {'event_category': 'form', 'event_label': 'order_1click'});
+                        yaCounter50680996.reachGoal('order_1click');
+                        submit('/1click/', {order_params: $("#form_calc").serialize()});
+                    });
+                    $(".backcall").css("margin-top", "0");
+                    $(".backcall").css("margin-left", "20%");
+                    $(".right_block").css("margin-bottom", "20px");
+                });
+                function buildElement(tagName, props) {
+                    var element = document.createElement(tagName);
+                    for (var propName in props)element[propName] = props[propName];
+                    return element;
+                }
+                function submit(link, props) {
+                    var form = buildElement('form', {method: 'post', action: link,});
+                    for (var propName in props)form.appendChild(buildElement('input', {
+                        type: 'hidden',
+                        name: propName,
+                        value: props[propName]
+                    }));
+                    form.style.display = 'none';
+                    document.body.appendChild(form);
+                    form.submit();
+                }
+                function click_currency(currency, ti, format, picture, format2, w, detail_picture) {
+                    $('#currency_value').val(currency * 0.80);
+                    $('#list_product_format').val(format);
+                    $('#print_run').val(ti);
+                    $('#weight').val(w);
+                    $('#info_currency').text(currency);
+                    $('#info_ti').text(ti);
+                    $('#info_format').text(format);
+                    $('#info_paper').text($('input[name="list_product_paper_name"]').val());
+                    $('#info_colors').text($('input[name="list_product_colors_name"]').val());
+                    $('#info_weight').text(w);
+                    $('.currency_value').removeClass("sel_currency");
+                    $('#currency_value_' + ti + format2).addClass("sel_currency");
+                    $('.zakaz_button_block').addClass("display");
+                    $('#picture_schema').attr("src", "https://printbroker.com/" + picture);
+                    $('#picture_schema').show();
+                    $('#picture').val(detail_picture);
+                }</script>
+
+                <style>#sb_price_table tr th {
+                    font-size: 14px
+                }</style>
+
+                <div id="calc_block">
+
+                    <div id="calc" class="params">
+
+                        <form id="form_calc" method="post" action="">
+
+                            <div class="calc-panel">
+
+                                <input type="hidden" name="list_product_type" value="Листовка / Флаер"/>
+                                <input type="hidden" name="product_xml_id" value="Ve2ujcRo"/>
+                                <input type="hidden" name="format_UF_XML_ID" value="">
+
+
+                                <div class="block100">
+                                    <input type="hidden" id="list_product_format" name="list_product_format"
+                                           value="594x841">
+                                </div>
+
+                                <div class="block100">
+
+                                    <div style="width:100%;">
+
+                                        <div><span>Выберите изделие:</span></div>
+
+                                        <div class="block100">
+                                            <select id="" name="list_product_colors">
+                                                <option value="1">Листовки</option>
+                                                <option value="2" selected>Буклеты</option>
+                                            </select>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="block100">
+
+
+                                    <div class="block100">
+
+                                        <div style="display: inline-block; width:49.75%;">
+
+                                            <div><span>Красочность:</span></div>
+
+                                            <div class="block100">
+                                                <select id="list_product_colors" name="list_product_colors">
+                                                    <option value="1">4(CMYK)+4(CMYK)</option>
+                                                    <option value="2" selected>4(CMYK)+0</option>
+                                                </select>
+                                                <input type="hidden" name="list_product_colors_name" value="4(CMYK)+0">
+                                                <input type="hidden" name="list_product_colors_flag" value="1">
+
+
+                                            </div>
+                                        </div>
+
+
+                                        <div style="display: inline-block; width:49.75%;">
+                                            <div><span>Бумага:</span></div>
+                                            <div class="block100">
+                                                <select id="list_product_paper" name="list_product_paper">
+                                                    <option value="25" selected>Мелованная Глянцевая 130</option>
+                                                </select>
+                                                <input type="hidden" name="list_product_paper_name"
+                                                       value="Мелованная  Глянцевая 130">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <input id="lines_number" name="lines_number" type="hidden" value="2">
+
+
+                                </div>
+
+                                <br/><br/>
+
+
+                                <!--<div class="notice">Выберите нужный формат и тираж, нажмите (кликните) на цену<br/>и оформите заказ в типографии Studio Kella.
+                                </div>-->
+
+                                <div class="table-content-class" style="max-height: 100%;">
+                                    <table id="sb_price_table">
+
+                                        <tbody>
+                                        <tr>
+                                            <th colspan="12">Тираж</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Формат</th>
+                                            <th>1000</th>
+                                            <th>2000</th>
+                                            <th>3000</th>
+                                            <th>4000</th>
+                                            <th>5000</th>
+                                            <th>6000</th>
+                                            <th>8000</th>
+                                            <th>10000</th>
+                                        </tr>
+
+                                        <tr class="">
+                                            <td class="format_td">A3</td>
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('4225','1000', 'A3', '/upload/iblock/f1d/f1db0e4eb65effe8124d9e4a03bf4cf7.png', 'A3', '17', '/upload/iblock/f76/f76794a26ddc4f7cd45d198aac28d4d7.png');"
+                                                      id="currency_value_1000A3">4225</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('5995','2000', 'A3', '/upload/iblock/f1d/f1db0e4eb65effe8124d9e4a03bf4cf7.png', 'A3', '34', '/upload/iblock/f76/f76794a26ddc4f7cd45d198aac28d4d7.png');"
+                                                      id="currency_value_2000A3">5995</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('7688','3000', 'A3', '/upload/iblock/f1d/f1db0e4eb65effe8124d9e4a03bf4cf7.png', 'A3', '51', '/upload/iblock/f76/f76794a26ddc4f7cd45d198aac28d4d7.png');"
+                                                      id="currency_value_3000A3">7688</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('9506','4000', 'A3', '/upload/iblock/f1d/f1db0e4eb65effe8124d9e4a03bf4cf7.png', 'A3', '68', '/upload/iblock/f76/f76794a26ddc4f7cd45d198aac28d4d7.png');"
+                                                      id="currency_value_4000A3">9506</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('11325','5000', 'A3', '/upload/iblock/f1d/f1db0e4eb65effe8124d9e4a03bf4cf7.png', 'A3', '85', '/upload/iblock/f76/f76794a26ddc4f7cd45d198aac28d4d7.png');"
+                                                      id="currency_value_5000A3">11325</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('13154','6000', 'A3', '/upload/iblock/f1d/f1db0e4eb65effe8124d9e4a03bf4cf7.png', 'A3', '102', '/upload/iblock/f76/f76794a26ddc4f7cd45d198aac28d4d7.png');"
+                                                      id="currency_value_6000A3">13154</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('16798','8000', 'A3', '/upload/iblock/f1d/f1db0e4eb65effe8124d9e4a03bf4cf7.png', 'A3', '136', '/upload/iblock/f76/f76794a26ddc4f7cd45d198aac28d4d7.png');"
+                                                      id="currency_value_8000A3">16798</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('20443','10000', 'A3', '/upload/iblock/f1d/f1db0e4eb65effe8124d9e4a03bf4cf7.png', 'A3', '170', '/upload/iblock/f76/f76794a26ddc4f7cd45d198aac28d4d7.png');"
+                                                      id="currency_value_10000A3">20443</span></td>
+
+                                        </tr>
+                                        <tr class="">
+                                            <td class="format_td">A4</td>
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('2205','1000', 'A4', '/upload/iblock/b17/b1799c4f73b4d171b024158c609430cd.jpg', 'A4', '8', '/upload/iblock/3cc/3ccbfa5ed40b12199ecefad37e502534.png');"
+                                                      id="currency_value_1000A4">2205</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('3128','2000', 'A4', '/upload/iblock/b17/b1799c4f73b4d171b024158c609430cd.jpg', 'A4', '17', '/upload/iblock/3cc/3ccbfa5ed40b12199ecefad37e502534.png');"
+                                                      id="currency_value_2000A4">3128</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('4011','3000', 'A4', '/upload/iblock/b17/b1799c4f73b4d171b024158c609430cd.jpg', 'A4', '25', '/upload/iblock/3cc/3ccbfa5ed40b12199ecefad37e502534.png');"
+                                                      id="currency_value_3000A4">4011</span></td>
+
+                                            <script>click_currency('4011', '3000', 'A4', '/upload/iblock/b17/b1799c4f73b4d171b024158c609430cd.jpg', 'A4', '25', '/upload/iblock/3cc/3ccbfa5ed40b12199ecefad37e502534.png');</script>
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('4960','4000', 'A4', '/upload/iblock/b17/b1799c4f73b4d171b024158c609430cd.jpg', 'A4', '34', '/upload/iblock/3cc/3ccbfa5ed40b12199ecefad37e502534.png');"
+                                                      id="currency_value_4000A4">4960</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('5909','5000', 'A4', '/upload/iblock/b17/b1799c4f73b4d171b024158c609430cd.jpg', 'A4', '42', '/upload/iblock/3cc/3ccbfa5ed40b12199ecefad37e502534.png');"
+                                                      id="currency_value_5000A4">5909</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('6863','6000', 'A4', '/upload/iblock/b17/b1799c4f73b4d171b024158c609430cd.jpg', 'A4', '51', '/upload/iblock/3cc/3ccbfa5ed40b12199ecefad37e502534.png');"
+                                                      id="currency_value_6000A4">6863</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('8765','8000', 'A4', '/upload/iblock/b17/b1799c4f73b4d171b024158c609430cd.jpg', 'A4', '68', '/upload/iblock/3cc/3ccbfa5ed40b12199ecefad37e502534.png');"
+                                                      id="currency_value_8000A4">8765</span></td>
+
+                                            <td><span class="currency_value sel_currency" style="font-weight:normal"
+                                                      onclick="click_currency('10666','10000', 'A4', '/upload/iblock/b17/b1799c4f73b4d171b024158c609430cd.jpg', 'A4', '85', '/upload/iblock/3cc/3ccbfa5ed40b12199ecefad37e502534.png');"
+                                                      id="currency_value_10000A4">10666</span></td>
+
+                                        </tr>
+                                        <tr class="">
+                                            <td class="format_td">200x200</td>
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('1470','1000', '200x200', '/upload/iblock/3ca/3ca82877bb87553d2be5f3cff098c229.png', '200x200', '5', '/upload/iblock/51b/51b922ec324025f042150b52168aefc7.png');"
+                                                      id="currency_value_1000200x200">1470</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('2086','2000', '200x200', '/upload/iblock/3ca/3ca82877bb87553d2be5f3cff098c229.png', '200x200', '10', '/upload/iblock/51b/51b922ec324025f042150b52168aefc7.png');"
+                                                      id="currency_value_2000200x200">2086</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('2674','3000', '200x200', '/upload/iblock/3ca/3ca82877bb87553d2be5f3cff098c229.png', '200x200', '16', '/upload/iblock/51b/51b922ec324025f042150b52168aefc7.png');"
+                                                      id="currency_value_3000200x200">2674</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('3307','4000', '200x200', '/upload/iblock/3ca/3ca82877bb87553d2be5f3cff098c229.png', '200x200', '21', '/upload/iblock/51b/51b922ec324025f042150b52168aefc7.png');"
+                                                      id="currency_value_4000200x200">3307</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('3939','5000', '200x200', '/upload/iblock/3ca/3ca82877bb87553d2be5f3cff098c229.png', '200x200', '27', '/upload/iblock/51b/51b922ec324025f042150b52168aefc7.png');"
+                                                      id="currency_value_5000200x200">3939</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('4576','6000', '200x200', '/upload/iblock/3ca/3ca82877bb87553d2be5f3cff098c229.png', '200x200', '32', '/upload/iblock/51b/51b922ec324025f042150b52168aefc7.png');"
+                                                      id="currency_value_6000200x200">4576</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('5843','8000', '200x200', '/upload/iblock/3ca/3ca82877bb87553d2be5f3cff098c229.png', '200x200', '43', '/upload/iblock/51b/51b922ec324025f042150b52168aefc7.png');"
+                                                      id="currency_value_8000200x200">5843</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('7111','10000', '200x200', '/upload/iblock/3ca/3ca82877bb87553d2be5f3cff098c229.png', '200x200', '54', '/upload/iblock/51b/51b922ec324025f042150b52168aefc7.png');"
+                                                      id="currency_value_10000200x200">7111</span></td>
+
+                                        </tr>
+                                        <tr class="">
+                                            <td class="format_td">A5</td>
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('1286','1000', 'A5', '/upload/iblock/162/162f32fad913ad29cd123791b5b77301.jpg', 'A5', '4', '/upload/iblock/917/9174caf536a9f0388615ff44fbcfbd4c.png');"
+                                                      id="currency_value_1000A5">1286</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('1825','2000', 'A5', '/upload/iblock/162/162f32fad913ad29cd123791b5b77301.jpg', 'A5', '8', '/upload/iblock/917/9174caf536a9f0388615ff44fbcfbd4c.png');"
+                                                      id="currency_value_2000A5">1825</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('2340','3000', 'A5', '/upload/iblock/162/162f32fad913ad29cd123791b5b77301.jpg', 'A5', '12', '/upload/iblock/917/9174caf536a9f0388615ff44fbcfbd4c.png');"
+                                                      id="currency_value_3000A5">2340</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('2894','4000', 'A5', '/upload/iblock/162/162f32fad913ad29cd123791b5b77301.jpg', 'A5', '16', '/upload/iblock/917/9174caf536a9f0388615ff44fbcfbd4c.png');"
+                                                      id="currency_value_4000A5">2894</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('3447','5000', 'A5', '/upload/iblock/162/162f32fad913ad29cd123791b5b77301.jpg', 'A5', '21', '/upload/iblock/917/9174caf536a9f0388615ff44fbcfbd4c.png');"
+                                                      id="currency_value_5000A5">3447</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('4004','6000', 'A5', '/upload/iblock/162/162f32fad913ad29cd123791b5b77301.jpg', 'A5', '25', '/upload/iblock/917/9174caf536a9f0388615ff44fbcfbd4c.png');"
+                                                      id="currency_value_6000A5">4004</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('5113','8000', 'A5', '/upload/iblock/162/162f32fad913ad29cd123791b5b77301.jpg', 'A5', '33', '/upload/iblock/917/9174caf536a9f0388615ff44fbcfbd4c.png');"
+                                                      id="currency_value_8000A5">5113</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('6222','10000', 'A5', '/upload/iblock/162/162f32fad913ad29cd123791b5b77301.jpg', 'A5', '42', '/upload/iblock/917/9174caf536a9f0388615ff44fbcfbd4c.png');"
+                                                      id="currency_value_10000A5">6222</span></td>
+
+                                        </tr>
+                                        <tr class="">
+                                            <td class="format_td">Евроформат</td>
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('735','1000', 'Евроформат', '/upload/iblock/b86/b864485f8acad2e7cd3d9906d224ed95.jpg', 'Евроформат', '2', '/upload/iblock/fb4/fb452b1ecf1baa8f03cabe4879ee06e7.png');"
+                                                      id="currency_value_1000Евроформат">735</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('1043','2000', 'Евроформат', '/upload/iblock/b86/b864485f8acad2e7cd3d9906d224ed95.jpg', 'Евроформат', '5', '/upload/iblock/fb4/fb452b1ecf1baa8f03cabe4879ee06e7.png');"
+                                                      id="currency_value_2000Евроформат">1043</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('1337','3000', 'Евроформат', '/upload/iblock/b86/b864485f8acad2e7cd3d9906d224ed95.jpg', 'Евроформат', '8', '/upload/iblock/fb4/fb452b1ecf1baa8f03cabe4879ee06e7.png');"
+                                                      id="currency_value_3000Евроформат">1337</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('1654','4000', 'Евроформат', '/upload/iblock/b86/b864485f8acad2e7cd3d9906d224ed95.jpg', 'Евроформат', '11', '/upload/iblock/fb4/fb452b1ecf1baa8f03cabe4879ee06e7.png');"
+                                                      id="currency_value_4000Евроформат">1654</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('1970','5000', 'Евроформат', '/upload/iblock/b86/b864485f8acad2e7cd3d9906d224ed95.jpg', 'Евроформат', '14', '/upload/iblock/fb4/fb452b1ecf1baa8f03cabe4879ee06e7.png');"
+                                                      id="currency_value_5000Евроформат">1970</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('2288','6000', 'Евроформат', '/upload/iblock/b86/b864485f8acad2e7cd3d9906d224ed95.jpg', 'Евроформат', '17', '/upload/iblock/fb4/fb452b1ecf1baa8f03cabe4879ee06e7.png');"
+                                                      id="currency_value_6000Евроформат">2288</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('2922','8000', 'Евроформат', '/upload/iblock/b86/b864485f8acad2e7cd3d9906d224ed95.jpg', 'Евроформат', '22', '/upload/iblock/fb4/fb452b1ecf1baa8f03cabe4879ee06e7.png');"
+                                                      id="currency_value_8000Евроформат">2922</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('3556','10000', 'Евроформат', '/upload/iblock/b86/b864485f8acad2e7cd3d9906d224ed95.jpg', 'Евроформат', '28', '/upload/iblock/fb4/fb452b1ecf1baa8f03cabe4879ee06e7.png');"
+                                                      id="currency_value_10000Евроформат">3556</span></td>
+
+                                        </tr>
+                                        <tr class="">
+                                            <td class="format_td">A6</td>
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('666','1000', 'A6', '/upload/iblock/6ea/6ea0c4bbc6724f451fb81ce0025f1635.jpg', 'A6', '2', '/upload/iblock/684/6847b29e0a36fac7e9187ddf80246860.png');"
+                                                      id="currency_value_1000A6">666</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('945','2000', 'A6', '/upload/iblock/6ea/6ea0c4bbc6724f451fb81ce0025f1635.jpg', 'A6', '4', '/upload/iblock/684/6847b29e0a36fac7e9187ddf80246860.png');"
+                                                      id="currency_value_2000A6">945</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('1212','3000', 'A6', '/upload/iblock/6ea/6ea0c4bbc6724f451fb81ce0025f1635.jpg', 'A6', '6', '/upload/iblock/684/6847b29e0a36fac7e9187ddf80246860.png');"
+                                                      id="currency_value_3000A6">1212</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('1499','4000', 'A6', '/upload/iblock/6ea/6ea0c4bbc6724f451fb81ce0025f1635.jpg', 'A6', '8', '/upload/iblock/684/6847b29e0a36fac7e9187ddf80246860.png');"
+                                                      id="currency_value_4000A6">1499</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('1785','5000', 'A6', '/upload/iblock/6ea/6ea0c4bbc6724f451fb81ce0025f1635.jpg', 'A6', '10', '/upload/iblock/684/6847b29e0a36fac7e9187ddf80246860.png');"
+                                                      id="currency_value_5000A6">1785</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('2074','6000', 'A6', '/upload/iblock/6ea/6ea0c4bbc6724f451fb81ce0025f1635.jpg', 'A6', '12', '/upload/iblock/684/6847b29e0a36fac7e9187ddf80246860.png');"
+                                                      id="currency_value_6000A6">2074</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('2648','8000', 'A6', '/upload/iblock/6ea/6ea0c4bbc6724f451fb81ce0025f1635.jpg', 'A6', '16', '/upload/iblock/684/6847b29e0a36fac7e9187ddf80246860.png');"
+                                                      id="currency_value_8000A6">2648</span></td>
+
+                                            <td><span class="currency_value" style="font-weight:normal"
+                                                      onclick="click_currency('3222','10000', 'A6', '/upload/iblock/6ea/6ea0c4bbc6724f451fb81ce0025f1635.jpg', 'A6', '21', '/upload/iblock/684/6847b29e0a36fac7e9187ddf80246860.png');"
+                                                      id="currency_value_10000A6">3222</span></td>
+
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                            <div class="block100" style="font-size:11px; padding-top:10px;">
+                                <span style="color:red;"> *</span><span> Цены указаны с учетом НДС в руб.</span>
+                            </div>
+
+                            <input type="hidden" id="currency_value" name="currency_value" value="0">
+                            <input type="hidden" id="days_value" name="days_value" value="2">
+                            <input type="hidden" id="po" name="po" value=''>
+                            <input type="hidden" id="delivery_price" name="delivery_price" value=''>
+                            <input type="hidden" name="action" value="">
+                            <!--<input type="hidden" name="picture" value="" >	-->
+                            <input type="hidden" id="picture" name="picture" value=""/>
+
+                            <input type="hidden" name="VB" id="VB" value="0"/>
+                            <input type="hidden" name="special" id="special" value="0"/>
+
+                            <input type="hidden" name="deliver" id="deliver"
+                                   value='a:3:{s:4:"name";s:20:"Достависта";s:4:"ID1C";s:1:"1";s:4:"site";s:26:"https://spb.dostavista.ru/";}'/>
+
+                            <input type="hidden" id="print_run" name="print_run" value="0">
+
+                            <input type="hidden" id="traf_product_lac_name" name="traf_product_lac_name"
+                                   value="нет">
+                            <input type="hidden" id="list_product_lac_name" name="list_product_lac_name"
+                                   value="нет">
+                            <input type="hidden" id="list_product_panton_name" name="list_product_panton_name"
+                                   value="нет">
+
+                            <input type="hidden" name="type_tiraz" value="Сборный тираж">
+
+                            <input type="hidden" name="element" value="listovki"/>
+
+                            <input type="hidden" id="weight" name="weight" value="">
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <div class="right_block">
+                    <div style="text-align:center;">
+                        <img id="picture_schema"
+                             src="https://printbroker.com//upload/iblock/b17/b1799c4f73b4d171b024158c609430cd.jpg"
+                             alt="Схема">
+                    </div>
+
+                    <div class="block100" style="text-align:center;">
+
+                        <div class="block100 info_detail">
+                            <span id="info_izdelie" style="font-weight:bold;">Листовка / Флаер </span><br/>
+                            Формат: <span id="info_format" style="font-weight:bold;"></span><br/>
+                            Красочность: <span id="info_colors" style="font-weight:bold;"></span><br/>
+                            Бумага: <span id="info_paper" style="font-weight:bold;"></span><br/>
+                            Тираж: <span id="info_ti" style="font-weight:bold;"></span><br/>
+                            Вес, кг: <span id="info_weight" style="font-weight:bold;"></span><br/>
+                            Стоимость (с НДС), руб: <span id="info_currency" style="font-weight:bold;"></span><br/>
+
+                        </div>
+                        <div class="block100" style="padding-top: 10px;">
+
+                            <div class="block50" style="text-align:center;">
+                                <a href="#lead-popup" data-toggle="modal" id="1click_button_sb" class="btn btn--red">Заказать</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <script>calc();</script>
+            </div>
+        </main>
+
+    </div>
+
+    <footer id="footer" class="navbar navbar-inverse">
+
+        <script src="static/js/api.printler2.min.js" api-key="y0LVXoyl2SqfEbr3rHYa8D45RopAIErV"
+                id="printler-api-script"></script>
+
+
+        <div class="container">
+
+            <ul class="nav navbar-nav container font16">
+                <li><a href="/company/">О студии</a></li>
+                <li><a href="/portfolio/">Наши работы</a></li>
+                <li><a href="/media/">Медиа</a></li>
+                <li><a href="/polygraphy/">Полиграфия</a></li>
+                <li><a href="http://www.kellagifts.ru/">Сувениры</a></li>
+                <li><a href="/clients/">Клиенты</a></li>
+                <li class="navbar-right"><a href="/contacts/">Контактная информация</a></li>
+            </ul>
+
+            <div class="row">
+
+                <div class="navbar-text navbar-left black-grey  col-lg-8">
+                    <p>ООО «Келла Студио», 2019 год</p>
+                    <p><a href="/politika.php" style="color:#444444">Политика конфиденциальности</a><br></p>
+
+                </div>
+
+                <div class="navbar-text navbar-right col-lg-4">
+                    Санкт-Петербург, пер. Дмитровский, д.6<br> Телефон: 8(812) 600-11-00 (по будням c 10 до 20)<br><br>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/Келла-Студио-293110534151753/?ref=hl" rel="nofollow"
+                           target="_blank" class="social-icon"><img src="images/fb.png"/></a>
+                        <a href="https://vk.com/kella_studio" rel="nofollow" target="_blank" class="social-icon"><img
+                                src="images/vk.png"/></a>
+                        <a href="https://www.instagram.com/kellastudio_spb/" rel="nofollow" target="_blank"
+                           class="social-icon"><img
+                                src="images/in.png"/></a>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+</div>
+
+<div class="mobile-panel">
+    <a href="#" class="btn  btn--red  btn--calc">Калькулятор</a>
+</div>
+
+<div class="lead-popup  modal fade" id="lead-popup">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="lead-popup__block">
+                <div class="lead-popup__title">Позвоните менеджеру</div>
+                <div class="lead-popup__subtitle">По будням, с 10 до 20</div>
+                <a href="tel:+78126001110" class="lead-popup__phone">+7 (812) 600-11-00</a>
+            </div>
+
+            <div class="lead-popup__block">
+                <div class="lead-popup__title">Рассчитайте тираж<br> в онлайн калькуляторе</div>
+                <div class="text-center">
+                    <a href="#" class="btn  btn--red">Калькулятор</a>
+                </div>
+            </div>
+
+            <div class="lead-popup__block">
+                <div class="lead-popup__title">Закажите звонок</div>
+                <p>Перезвоним Вам за 15 минут</p>
+                <form action="" class="lead-form">
+                    <input type="text" class="input" placeholder="Имя">
+                    <input type="tel" class="input" placeholder="Телефон">
+                    <button type="submit" class="btn  btn--red">Отправить</button>
+                </form>
+            </div>
+
+            <div class="lead-popup__block">
+                <div class="lead-popup__title">Отправьте запрос</div>
+                <form action="" class="lead-form">
+                    <textarea name="" id="" class="input  input--textarea" rows="3"
+                              placeholder="Текст запроса"></textarea>
+                    <div class="lead-form__row">
+                        <input type="tel" class="input" placeholder="E-mail">
+                        <button type="submit" class="btn  btn--red">Отправить</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bitrix/templates/kella_fixed/js/bootstrap.min.js"></script>
+
+<script type="text/javascript"
+        src="bitrix/templates/kella_fixed/js/fancybox/source/jquery.fancybox.pack_v_2_1_5.js"></script>
+<link rel="stylesheet" href="bitrix/templates/kella_fixed/js/fancybox/source/jquery.fancybox_v_2_1_5.css"
+      type="text/css" media="screen"/>
+
+<script src="bitrix/templates/kella_fixed/js/misc.js"></script>
+<script src="bitrix/templates/kella_fixed/js/top_portfolio.js"></script>
+
+<!-- добавлены скрипты слайдера -->
+<script src="bitrix/templates/kella_fixed/js/slick.min.js"></script>
+<script src="bitrix/templates/kella_fixed/js/slick-init.js"></script>
+
+
+<!-- Google analytics -->
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-32433452-1");
+        pageTracker._trackPageview();
+    } catch (err) {
+    }</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">(function (d, w, c) {
+    (w[c] = w[c] || []).push(function () {
+        try {
+            w.yaCounter142838 = new Ya.Metrika({
+                id: 142838,
+                webvisor: true,
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true
+            });
+        } catch (e) {
+        }
+    });
+    var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+        n.parentNode.insertBefore(s, n);
+    };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f);
+    } else {
+        f();
+    }
+})(document, window, "yandex_metrika_callbacks");</script>
+<noscript>
+    <div><img src="http://mc.yandex.ru/watch/142838" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript><!-- /Yandex.Metrika counter -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter33702344 = new Ya.Metrika({
+                    id: 33702344,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
+                });
+            } catch (e) {
+            }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/33702344" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+    (function () {
+        var widget_id = '6Uw38UIJPZ';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '//code.jivosite.com/script/widget/' + widget_id;
+        var ss = document.getElementsByTagName('script')[0];
+        ss.parentNode.insertBefore(s, ss);
+    })();</script>
+<!-- {/literal} END JIVOSITE CODE -->
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-68502294-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>
