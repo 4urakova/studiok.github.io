@@ -800,6 +800,104 @@ h2 + .notice-link {
 	margin-top: -30px;
 }
 
+
+
+.all_block {
+	width: 750px;
+	padding-left: 40px;
+	padding-bottom: 40px;
+}
+
+.order-sidebar {
+	padding: 0 40px;
+	width: calc(100% - 750px);
+	position: sticky;
+	top: 0;
+}
+
+.order-wr {
+	display: flex;
+}
+
+.order-functions {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 20px 15px;
+	box-shadow: 0 8px 38px 0 rgba(0,0,0,.2);
+	padding: 30px 28px;
+}
+
+.icon-link {
+	display: flex;
+	align-items: center;
+	color: #000 !important;
+	margin-bottom: 15px;
+}
+
+.icon-link img {
+	margin-right: 10px;
+}
+
+.icon-link:last-child {
+	margin-bottom: 0;
+}
+
+.text-accent .phone-link {
+	color: #000 !important;
+	display: block;
+	margin-top: 8px;
+	font-weight: 700;
+}
+
+.text-accent--center {
+	text-align: center;
+}
+
+.order_block .panel-heading a::after {
+	border-color: #af101d;
+}
+
+.order_block .panel-heading a {
+	font-size: 18px;
+	box-shadow: none;
+}
+
+.panel-heading {
+	padding: 0;
+}
+
+.content.text {
+	background: #fff;
+	padding: 15px;
+}
+
+.title .content {
+	padding-left: 0;
+}
+
+.order_block .panel-collapse {
+	font-size: 14px;
+	line-height: 1.6;
+	display: none;
+	padding: 5px 35px;
+}
+
+#a_show_order_picture {
+	cursor: pointer;
+	color: inherit;
+	border-bottom: 1px dashed #ccc;
+}
+
+#a_show_order_picture:hover {
+	text-decoration: none !important;
+	border-bottom: 1px dashed orange;
+}
+
+.bx-aside-nav .bx-nav-parent-arrow i {
+	color: #333;
+}
+
+
 @media screen and (max-width: 1080px) {
 	.navbar-nav > li > a {
 		margin-right: 0;
