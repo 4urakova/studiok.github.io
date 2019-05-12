@@ -22,7 +22,7 @@
 
 .rel {
 	position: relative;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 }
 
 
@@ -504,12 +504,17 @@ body > div.rel {
 }
 
 .btn--red {
-	border-radius: 0;
+	/*border-radius: 0;*/
 	padding: 6px 20px;
 	background: rgb(176,3,52);
 	text-decoration: none;
 	color: #fff;
 	transition: all ease 0.3s;
+}
+
+.btn--gold {
+    color: #fff;
+    background: #bdaf6c;
 }
 
 .btn--red:hover,
