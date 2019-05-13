@@ -7,6 +7,12 @@
 	margin: 0 auto;
 }
 
+p {
+	line-height: 1.6;
+	font-weight: 300;
+	font-size: 16px;
+}
+
 @media (max-width: 990px) {
 	.container {
 		padding: 0 10px;
@@ -41,6 +47,12 @@ body > div.rel {
 	position: fixed;
 	z-index: 100;
 	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.header-mobile {
+	display: none;
 }
 
 
@@ -741,6 +753,11 @@ body > div.rel {
 	border-top: 4px solid #e4ddbd;
 }
 
+.lead-block1 {
+	border-top: 4px solid #e4ddbd;
+	margin-top: 7px;
+}
+
 .tab-block {
 	border-bottom: 1px solid rgba(255,255,255,0.2);
 	padding-bottom: 10px;
@@ -822,16 +839,22 @@ h2 + .notice-link {
 .order-functions {
 	display: flex;
 	flex-direction: column;
-	margin: 0 0 20px 15px;
-	box-shadow: 0 8px 38px 0 rgba(0,0,0,.2);
-	padding: 30px 28px;
+	margin: 0 0 20px 0;
+	background: #ffffff;
 }
 
 .icon-link {
 	display: flex;
 	align-items: center;
 	color: #000 !important;
-	margin-bottom: 15px;
+	padding: 15px 20px;
+	font-size: 18px;
+	font-weight: 300;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	text-decoration: none;
+}
+.icon-link:last-child {
+	border-bottom: 0;
 }
 
 .icon-link img {
@@ -868,7 +891,7 @@ h2 + .notice-link {
 
 .content.text {
 	background: #fff;
-	padding: 15px;
+	padding: 35px;
 }
 
 .title .content {
@@ -876,25 +899,82 @@ h2 + .notice-link {
 }
 
 .order_block .panel-collapse {
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.6;
+	font-weight: 300;
 	display: none;
-	padding: 5px 35px;
+	padding: 15px 35px;
+	background: #fff;
+}
+
+.pda {
+	text-align: center;
+}
+
+.all_block .pda a,
+.pda a {
+	font-size: 12px;
 }
 
 #a_show_order_picture {
 	cursor: pointer;
-	color: inherit;
-	border-bottom: 1px dashed #ccc;
+	font-size: 12px;
+	color: #af1e23;
+	text-decoration: none;
+	border-bottom: 1px dashed #af1e23;
+}
+
+.inner-form--order p {
+	font-size: 16px;
+	font-weight: 300;
+	margin-bottom: 20px;
 }
 
 #a_show_order_picture:hover {
 	text-decoration: none !important;
-	border-bottom: 1px dashed orange;
+	color: #000;
+	border-bottom: 1px dashed #000;
 }
 
 .bx-aside-nav .bx-nav-parent-arrow i {
 	color: #333;
+}
+
+.text-accent.text-accent--center {
+	padding: 40px;
+	background: #fff;
+	border-left: 4px solid #b00334;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.ppp,
+.innersmall {
+	font-size: 14px;
+	font-weight: 300;
+	margin: 20px 0;
+}
+
+.order-functions-wr {
+	position: sticky;
+	top: 140px;
+}
+
+@media screen and (max-width: 1180px) {
+	.header-wrap .navbar-text.navbar-right {
+		width: auto;
+	}
+
+	.header-wrap .navbar-nav > li > a {
+		margin-right: 10px;
+	}
+
+	#tabMenu.nav-tabs > li > a {
+		padding: 20px 10px;
+		font-size: 16px;
+		height: 62px;
+	}
+
 }
 
 
@@ -928,6 +1008,78 @@ h2 + .notice-link {
 	}
 }
 
+@media screen and (max-width: 1023px) {
+	.header-wrap {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		width: 300px;
+		top: 0;
+		left: auto;
+		right: -300px;
+	}
+
+	.header-mobile {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		width: 100%;
+		padding: 20px 15px;
+		background: rgba(0,0,0,0.6);
+	}
+
+	.burger {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		width: 32px;
+		height: 32px;
+		margin-left: auto;
+		background: #edebe2;
+		margin-bottom: 6px;
+	}
+
+	.burger__control,
+	.burger__control::before,
+	.burger__control::after {
+		width: 22px;
+		height: 3px;
+		background: #000;
+	}
+
+	.burger__control::before,
+	.burger__control::after {
+		content: '';
+		display: block;
+	}
+
+	.burger__control::before {
+		margin-top: -6px;
+	}
+
+	.burger__control::after {
+		margin-top: 9px;
+	}
+
+	.rel {
+		overflow-x: hidden;
+	}
+
+	.header-mobile__right {
+		width: calc(100% - 95px);
+		color: #fff;
+		text-align: right;
+	}
+
+	.header-mobile__phones, .header-mobile__phones a {
+		color: #fff;
+	}
+}
+
 @media screen and (max-width: 767px) {
 	#mainMenu {
 		display: none;
@@ -939,6 +1091,16 @@ h2 + .notice-link {
 }
 
 @media screen and (max-width: 499px) {
+
+	.dot,
+	.header-mobile__time {
+		display: none;
+	}
+
+	.header-mobile__phones a {
+		display: block;
+	}
+
 	.col-xxs-12 {
 		width: 100%;
 		margin-bottom: 20px;
