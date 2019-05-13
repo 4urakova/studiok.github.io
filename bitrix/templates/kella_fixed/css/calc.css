@@ -96,8 +96,6 @@ span#rezult_price {
 .panton_color:hover{color:yellow;}
 .panton_colors_list{background:#fff;padding:10px;border-radius:4px;width:440px;display:inline-block;margin-top:3px;}
 .order_block div.title {
-    background: #af1e23;
-    color: #ffffff;
     font-weight: 300;
     padding: 12px 35px;
 }
@@ -105,7 +103,7 @@ span#rezult_price {
     display: block;
     width: 100%;
     position: relative;
-    color: #ffffff !important;
+    color: #000 !important;
     text-decoration: none;
 }
 .order_block div.title a::after {
