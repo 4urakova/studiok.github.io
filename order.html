@@ -250,7 +250,7 @@
 
             <h1>Новый заказ</h1>
 
-            <form name="ORDER_FORM" action="/1click/" method="POST" enctype="multipart/form-data">
+            <div name="ORDER_FORM" action="/1click/" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="sessid" id="sessid_1" value="6886cc515d3f0ad656a2edaa1399314b"/>
                 <input type="hidden" name="WEB_FORM_ID" value="1"/>
                 <input type="hidden" name="lang" value="ru"/>
@@ -271,8 +271,7 @@
                         <div class="order_block">
 
                             <div class="order_picture">
-                                <img style="width:100%"
-                                     src="https://printbroker.com/upload/iblock/424/424213a8c27e5f3beadba69ae8707d7d.png">
+                                <img src="upload/iblock/424/424213a8c27e5f3beadba69ae8707d7d.png" alt="">
                             </div>
 
 
@@ -308,9 +307,10 @@
                                         </tbody>
                                     </table>
 
-                                    <p class="ppp"><a id="a_picture" download=""
-                                                      href="/upload/iblock/424/424213a8c27e5f3beadba69ae8707d7d.png">Скачать
-                                        подробное описание изделия с техническими требованиями и схемой</a></p>
+                                    <p class="ppp">
+                                        <a id="a_picture" download=""
+                                           href="upload/iblock/424/424213a8c27e5f3beadba69ae8707d7d.png">Скачать
+                                            подробное описание изделия с техническими требованиями и схемой</a></p>
 
                                     <p class="ppp"> Внимание! Если документ не соответствует требованиям, то наше ПО
                                         попытается автоматически нормализовать его до корректного вида. В этом
@@ -326,16 +326,18 @@
                             <br>
                             <div><a id="a_show_order_picture">Развернуть схему</a></div>
                             <br>
+
                             <div class="panel-heading in">
 
                                 <div class="title">
                                     <div class="title2 left">
-                                        <div class="content"><a href="javascript:void(0)"
-                                                                style="border:none; color:#fff;">Параметры
-                                            заказа</a></div>
+                                        <div class="content">
+                                            <a href="javascript:void(0)">Параметры заказа</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="order_params panel-collapse" style="display: block;">
 
                                 <div class="tiraz_type" style="">
@@ -365,32 +367,38 @@
                                     <div>
                                         <div style="width: 47%; display: inline-block;">Красочность</div>
                                         &nbsp;<input type="text" class="inputtext" name="form_text_12" value=""
-                                                     size="0"></div>
+                                                     size="0">
+                                    </div>
 
                                     <div>
                                         <div style="width: 47%; display: inline-block;">Спец. краски</div>
                                         &nbsp;<input type="text" class="inputtext" name="form_text_13" value=""
-                                                     size="0"></div>
+                                                     size="0">
+                                    </div>
 
                                     <div>
                                         <div style="width: 47%; display: inline-block;">Бумага</div>
                                         &nbsp;<input type="text" class="inputtext" name="form_text_14" value=""
-                                                     size="0"></div>
+                                                     size="0">
+                                    </div>
 
                                     <div>
                                         <div style="width: 47%; display: inline-block;">Лак</div>
                                         &nbsp;<input type="text" class="inputtext" name="form_text_15" value=""
-                                                     size="0"></div>
+                                                     size="0">
+                                    </div>
 
                                     <div>
                                         <div style="width: 47%; display: inline-block;">Трафаретный лак</div>
                                         &nbsp;<input type="text" class="inputtext" name="form_text_16" value=""
-                                                     size="0"></div>
+                                                     size="0">
+                                    </div>
 
                                     <div>
                                         <div style="width: 47%; display: inline-block;">Ламинирование</div>
                                         &nbsp;<input type="text" class="inputtext" name="form_text_17" value=""
-                                                     size="0"></div>
+                                                     size="0">
+                                    </div>
 
                                     <div>
                                         <br>
@@ -446,15 +454,16 @@
                                        value="a:6:{s:9:&quot;FINPOTOK1&quot;;a:3:{s:5:&quot;VALUE&quot;;d:56957.217487199996;s:5:&quot;TITLE&quot;;s:18:&quot;Финпоток 1&quot;;s:8:&quot;FINPOTOK&quot;;i:1;}s:3:&quot;SSB&quot;;a:3:{s:5:&quot;VALUE&quot;;d:8045.7217714285716;s:5:&quot;TITLE&quot;;s:49:&quot;2 скрепки, файловые скрепки&quot;;s:8:&quot;FINPOTOK&quot;;i:2;}s:9:&quot;FINPOTOK2&quot;;a:3:{s:5:&quot;VALUE&quot;;d:8045.7217714285716;s:5:&quot;TITLE&quot;;s:18:&quot;Финпоток 2&quot;;s:8:&quot;FINPOTOK&quot;;i:2;}s:9:&quot;FINPOTOK3&quot;;a:3:{s:5:&quot;VALUE&quot;;i:0;s:5:&quot;TITLE&quot;;s:18:&quot;Финпоток 3&quot;;s:8:&quot;FINPOTOK&quot;;i:3;}s:9:&quot;FINPOTOK4&quot;;a:3:{s:5:&quot;VALUE&quot;;i:0;s:5:&quot;TITLE&quot;;s:18:&quot;Финпоток 4&quot;;s:8:&quot;FINPOTOK&quot;;i:4;}s:10:&quot;FINPOTOK10&quot;;a:3:{s:5:&quot;VALUE&quot;;i:624;s:5:&quot;TITLE&quot;;s:19:&quot;Финпоток 10&quot;;s:8:&quot;FINPOTOK&quot;;i:10;}}">
                             </div>
                             <input type="hidden" name="form_hidden_20"
-                                   value="/upload/iblock/424/424213a8c27e5f3beadba69ae8707d7d.png">&nbsp;
+                                   value="upload/iblock/424/424213a8c27e5f3beadba69ae8707d7d.png">
 
 
                             <div class="panel-heading">
                                 <div class="title">
                                     <div class="title2 left">
-                                        <div class="content"><a href="javascript:void(0)"
-                                                                style="border:none; color:#fff;">Контактная
-                                            информация</a></div>
+                                        <div class="content">
+                                            <a href="javascript:void(0)">
+                                                Контактная информация</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -503,7 +512,7 @@
 
                                 <input type="hidden" name="company" value="" border="0">
                                 <input type="hidden" name="company_inn" value="" border="0">
-                                <input type="hidden" name="company_addr" value=", , , д. , оф. " border="0">
+                                <input type="hidden" name="company_addr" value="" border="0">
 
                                 <br>
                             </div>
@@ -516,8 +525,7 @@
 
                                 <div class="title">
                                     <div class="title2 left">
-                                        <div class="content"><a href="javascript:void(0)"
-                                                                style="border:none; color:#fff;">Выбор способа
+                                        <div class="content"><a href="javascript:void(0)">Выбор способа
                                             доставки</a></div>
                                     </div>
                                 </div>
@@ -611,8 +619,7 @@
                             <div class="panel-heading">
                                 <div class="title">
                                     <div class="title2 left">
-                                        <div class="content"><a href="javascript:void(0)"
-                                                                style="border:none; color:#fff;">Загрузить файл</a>
+                                        <div class="content"><a href="javascript:void(0)">Загрузить файл</a>
                                         </div>
                                     </div>
                                 </div>
@@ -637,39 +644,64 @@
                                 <button class="btn  btn--gray" onclick="window.close();return false;">Отменить</button>
                             </div>
 
-                            <div class="block50">
-                                <input type="submit" class="btn  btn--orange  btn--right" name="web_form_submit"
-                                       value="Отправить заказ">
-                            </div>
                         </div>
 
+                        <div class="block100 clearfix lead-block1">
+
+                            <div class="inner-form  inner-form--order">
+
+                                <h2>Оформление заказа</h2>
+                                <p>Менеджер свяжется с Вами по указанному номеру телефона в ближайшее время.<br> Информация о заказе будет отправлена на Ваш e-mail.</p>
+
+                                <div class="inner-form__row">
+                                    <input type="text" class="input" placeholder="Имя*" required>
+
+                                    <input type="text" class="input" placeholder="Телефон*" required>
+                                </div>
+                                <div class="inner-form__row">
+                                    <input type="text" class="input" placeholder="E-mail*" required>
+
+                                    <input type="text" class="input" placeholder="Организация">
+                                </div>
+
+                                <div class="pda">Отправляя данные, Вы соглашаетесь с <a href="/politika.php" target="_blank">политикой конфиденциальности</a></div>
+
+                                <div class="inner-form__row  inner-form__row--sub">
+                                    <input type="submit" class="btn  btn--red  btn--right" name="web_form_submit"
+                                           value="Отправить заказ">
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
 
                     <aside class="order-sidebar">
 
-                        <div class="order-functions">
-                            <a class="print_button icon-link" href="https://printbroker.com/product/broshyuri/#"
-                               onclick="on_print();">
-                                <img src="assets/img/icon-print.png" alt="">
-                                <span>Распечатать заказ</span>
-                            </a>
+                        <div class="order-functions-wr">
+                            <div class="order-functions">
+                                <a class="print_button icon-link" href="https://printbroker.com/product/broshyuri/#"
+                                   onclick="on_print();">
+                                    <img src="images/icon-print.png" alt="">
+                                    <span>Распечатать заказ</span>
+                                </a>
 
-                            <a href="#" class="icon-link">
-                                <img src="assets/img/blank.png" width="20" height="20" alt="">
-                                <span>Распечатать счёт</span>
-                            </a>
-                            <a href="#" class="icon-link">
-                                <img src="assets/img/download.png" width="20" height="20" alt="">
-                                <span>Скачать заказ в .pdf</span>
-                            </a>
+                                <a href="#" class="icon-link">
+                                    <img src="images/blank.png" width="20" height="20" alt="">
+                                    <span>Распечатать счёт</span>
+                                </a>
+                                <a href="#" class="icon-link">
+                                    <img src="images/download.png" width="20" height="20" alt="">
+                                    <span>Скачать заказ в .pdf</span>
+                                </a>
+                            </div>
+
+                            <div class="text-accent  text-accent--center">
+                                Пожалуйста, не стесняйтесь задавать нам любые вопросы и дайте нам свои предложения по
+                                улучшению
+                                <a href="tel:+78126001100" class="phone-link">по тел. 8 (812) 600-11-00</a>
+                            </div>
                         </div>
 
-                        <div class="text-accent  text-accent--center">
-                            Пожалуйста, не стесняйтесь задавать нам любые вопросы и дайте нам свои предложения по
-                            улучшению
-                            <a href="tel:+78126773703" class="phone-link">по тел. 8 (812) 677-37-03</a>
-                        </div>
                     </aside>
 
 
@@ -941,6 +973,15 @@
 <!-- добавлены скрипты слайдера -->
 <script src="bitrix/templates/kella_fixed/js/slick.min.js"></script>
 <script src="bitrix/templates/kella_fixed/js/slick-init.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.panel-heading').click(function(){
+            $(this).toggleClass('in').next().slideToggle();
+            $('.panel-heading').not(this).removeClass('in').next().slideUp();
+        });
+    });
+    </script>
 
 
 <!-- Google analytics -->
