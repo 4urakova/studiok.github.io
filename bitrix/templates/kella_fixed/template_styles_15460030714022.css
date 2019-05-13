@@ -7,12 +7,6 @@
 	margin: 0 auto;
 }
 
-p {
-	line-height: 1.6;
-	font-weight: 300;
-	font-size: 16px;
-}
-
 @media (max-width: 990px) {
 	.container {
 		padding: 0 10px;
@@ -966,7 +960,7 @@ h2 + .notice-link {
 	left: 0;
 }
 
-.success {
+.container.inner-pages.success {
 	height: 100vh !important;
 }
 
