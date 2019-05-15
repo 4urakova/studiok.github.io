@@ -59,12 +59,6 @@ body > div.rel {
 	width: 100%;
 }
 
-@media (max-width: 990px) {
-	#header {
-		position: absolute;
-	}
-}
-
 /*END HEADER*/
 
 /*LOGO*/
@@ -1013,14 +1007,35 @@ h2 + .notice-link {
 }
 
 @media screen and (max-width: 1023px) {
+
+	#header {
+		position: static;
+	}
+
+	#logo {
+		display: none;
+	}
+
+	.header-wrap .navbar-inverse {
+		background-color: transparent;
+	}
+
 	.header-wrap {
-		position: absolute;
+		position: fixed;
 		display: flex;
 		flex-direction: column;
 		width: 300px;
+		min-height: 100vh;
 		top: 0;
 		left: auto;
 		right: -300px;
+		transition: right 0.3s ease;
+		z-index: 1000;
+		background: rgba(0,0,0,0.9);
+	}
+
+	.header-wrap--active {
+		right: 0;
 	}
 
 	.header-mobile {
@@ -1035,7 +1050,9 @@ h2 + .notice-link {
 	}
 
 	.burger {
-		position: relative;
+		position: fixed;
+		top: 20px;
+		right: 15px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -1043,8 +1060,9 @@ h2 + .notice-link {
 		width: 32px;
 		height: 32px;
 		margin-left: auto;
-		background: #edebe2;
+		background: #d2cba4;
 		margin-bottom: 6px;
+		z-index: 1200;
 	}
 
 	.burger__control,
@@ -1082,19 +1100,81 @@ h2 + .notice-link {
 	.header-mobile__phones, .header-mobile__phones a {
 		color: #fff;
 	}
-}
 
-@media screen and (max-width: 767px) {
-	#mainMenu {
+	#tabMenu {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		border: none;
+		margin: 20px 0;
+	}
+
+	#tabMenu.nav-tabs > li {
+		width: 100%;
+	}
+
+	#tabMenu.nav-tabs > li > a {
+		background: none;
+		padding: 10px;
+		font-size: 16px;
+		height: auto;
+		text-align: left;
+		border-right: none;
+	}
+
+	#tabSubMenu {
 		display: none;
 	}
 
-	#header {
-		top: 0;
+	#mainMenu {
+		width: 100%;
+		float: none !important;
+	}
+
+	.header-mobile__phones {
+		margin-top: 36px;
 	}
 }
 
+@media screen and (max-width: 767px) {
+
+	h2 {
+		font-size: 22px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.text-col:nth-child(2n-1) {
+		padding-right: 0;
+	}
+
+	.text-col:nth-child(2n) {
+		padding-left: 15px;
+	}
+
+	.text-col {
+		margin-bottom: 30px;
+	}
+
+}
+
 @media screen and (max-width: 499px) {
+
+	.promo {
+		flex-direction: column;
+	}
+
+	.promo__col--left {
+		padding: 0 30px;
+	}
+
 
 	.dot,
 	.header-mobile__time {

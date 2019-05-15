@@ -49,6 +49,14 @@ $('#toTop').click(function (e) {
 	$("body").animate({"scrollTop":0},"slow");
 });
 
+$(document).ready(function() {
+
+	$('.burger').click(function (ev) {
+		$('.header-wrap').toggleClass('header-wrap--active');
+		$(this).toggleClass('burger--active');
+	});
+});
+
 /* Apply fancybox to multiple items */
 $(function(){
 	if($.fancybox) {
