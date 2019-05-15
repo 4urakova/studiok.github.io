@@ -124,7 +124,11 @@
 <body>
 <a class="sr-only" href="#content">Skip to main content</a>
 <div class="rel">
+    <!-- изменена структура header -->
     <header class="header-wrap">
+        <div class="burger">
+            <div class="burger__control"></div>
+        </div>
         <div id="header">
             <div class="container">
                 <a id="logo" class="pull-left" href="/">
@@ -140,7 +144,7 @@
                         <li><a href="/polygraphy/" data-target="#tab-main-menu-2">Полиграфия</a></li>
                         <li><a href="#">Калькулятор</a></li>
                         <li><a href="#">Отрасли</a></li>
-                        <li><a href="http://www.kellagifts.ru/" data-target="#tab-main-menu-3">Сувениры</a></li>
+                        <li><a href="//www.kellagifts.ru/" data-target="#tab-main-menu-3">Сувениры</a></li>
                     </ul>
 
                     <div id="tabSubMenu" class="tab-content text-white">
@@ -183,7 +187,8 @@
                             <span><a href="/polygraphy/prepress/">Предпечатная подготовка</a></span>
                             <span><a href="/polygraphy/horeca/">Horeca</a></span>
                             <span><a href="/polygraphy/retail/">Retail</a></span>
-                            <span><a href="/polygraphy/gotovye-makety-dlya-pechati/">Готовые макеты для печати</a></span>
+                            <span><a
+                                    href="/polygraphy/gotovye-makety-dlya-pechati/">Готовые макеты для печати</a></span>
                             <span><a href="/polygraphy/dopolnitelnye-uslugi-i-vozmozhnosti-poligrafii/">Дополнительные услуги и возможности полиграфии</a></span>
                             <span><a href="/polygraphy/originalnaya-poligrafi/">Оригинальная полиграфия</a></span>
                             <span><a href="/polygraphy/uf-pechat-na-plastike/">УФ-печать на пластике</a></span>
@@ -228,6 +233,34 @@
             </div>
         </div>
     </header>
+    <!-- добавлен элемент header-mobile -->
+    <div class="header-mobile">
+        <div class="header-mobile__top clearfix">
+            <a class="pull-left logo-mob" href="/">
+                <img src="images/logo.jpg" title="logo.jpg" border="0"
+                     alt="logo.jpg" width="91" height="80"/>
+            </a>
+
+            <div class="pull-right header-mobile__right">
+
+                <div class="header-mobile__phones">
+                    <a href="tel:+78126001100" class="navbar-text__phone  navbar-text__phone--main">+7 (812)
+                        600-11-00</a>
+                    <span class="dot">&#9679</span>
+                    <a href="tel:+78005058803" class="navbar-text__phone">8 (800) 505-88-03</a>
+                </div>
+                <div class="header-mobile__time">
+                    по будням с 10 до 20
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--<div class="header-mobile__bottom clearfix">
+
+        </div>-->
+    </div>
 
     <div class="container inner-pages">
 
